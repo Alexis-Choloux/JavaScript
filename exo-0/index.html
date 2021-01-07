@@ -8,58 +8,79 @@
         <h1>Exercice 0</h1>
 
         <script type="text/javascript">
+        // j'ouvre mes balises JS
 
         /* Section 1 */   
 
         var name = "Joe";
+        // je déclare la variable name qui prend pour valeur Joe 
         var city = 'London';
+        // même chose mais avec des simples quotes
         var age = 32;
+        // même chose avec un integer, qui ne necessite pas de quotes
         var isRed = true;
+        // même chose avec un boolean qui retourne true, inverse de false
         var isOld = age > 80;
+        // même chose, avec une valeur age qui est inférieure à 80
 
         var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
+        // variable déclarée avec un tableau qui comporte plusieurs éléments
 
         function info(height, weight) {
+            // je declare une fonction info qui prend deux paramètres : height et weight
             if (height > 180) {
+                // je mets une condition qui fonction "si height est supérieur à 180"
                 console.log('Vous êtes grand');
+                // imprime ou "log" la phrase ou "string" : 'Vous êtes grand'
             }
             if (weight < 0) {
+                // condition 'si weight est inférieur à 0'
                 console.log('oups, there is a problem');
             } else if ( weight < 15) {
+                // autre condition du dernier if
                 console.log('Are you that slim ?')
             } else {
+                // autre condition des conditions precedentes
                 console.log('Good !')
             }
         }
 
         info(165, 45);
+        // utilisation de la fonction 'info' avec les parametres '165' et '45' pour, respectivement, 'height', 'weight'
 
         var myHeight = 175;
         var myWeight = 86;
+        // declaration des variables avec des valeurs
 
         info(myHeight, myWeight);
+        // utilisation de la fonction info avec les variables précédemment déclarée
 
         info(myHeight + 15, myWeight - 100);
+        // utilisation de la fonction info avec les variables, calculée selon les parametres indiques
 
         function toUpper(variable) {
             return variable.toUpperCase();
         }
+        // création de la fonction toupper, avec variable comme parametre. Elle retourne variable avec la fonction permettant de mettre le texte en majuscules
 
         var upperName = toUpper(name);
+        // déclaration de la variable upperName, comprenant la fonction toUpper comme valeur, avec name comme paramètre
 
         for (i = 0; i < 3; i = i + 1) {
+            // création boucle for, qui demarre de 0, s'arrête à 3, et ajoute 1 à chaque tour
             console.log(previousJobs[i]);
+            // imprime ou log la valeur de préviousJobs
         }
 
         /* Section 2: */
 
         // afficher la ville dans laquele Joe vit.     
-
+        console.log(city);
         // afficher si Joe est roux ou pas.
-
+        console.log(isRed);
         /* Section 3 */
 
-        // console.log(myVariable);
+        console.log(myVariable);
 
         </script>
 

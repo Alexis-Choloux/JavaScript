@@ -34,6 +34,7 @@ Décommenter la ligne puis recharger la page.
 ```
 
 Que se passe-t-il et pourquoi ?
+<!-- Une erreur s'affiche car la variable myVariable n'a pas été déclarée précédemment -->
 
 # Exo-1 - Les variables
 
@@ -68,6 +69,7 @@ et relancer le programme.
 Vous avez été recruté pour écrire un programme pour gérer les inscriptions d'une course à pied. Tous les adultes courront le matin et tous les personnes qui ont moins de 18 ans l'après midi. Suivez les instructions afin de développer la logique du programme.
 
 1. Créer une variable pour stocker si un coureur est déjà inscrit ou pas. Quel est le type de cette variable ?
+<!-- il s'agit d'un boolean -->
 
 2. Créer une variable pour stocker l'âge du coureur.
 
