@@ -38,6 +38,38 @@ let addGame = (oppo, tPoints, oPoints) => team._games.push(
     }
 );
 
+function totalTeamPoints() {
+    let total = 0;
+    for (let i = 0; i < team._games.length; i++) {
+        total += team._games[i].teamPoints;
+    }
+    return total;
+}
+
+function averageOpponents() {
+    let total = 0;
+    let average = 0;
+    for (let i = 0; i < team._games.length; i++) {
+        total += team._games[i].teamPoints;
+    }
+    average = total / team._games.length;
+    return average.toFixed(2);
+}
+
+function findOlderPlayer() {
+
+    let olderPlayer = 0;
+
+    for (i = 0; i < team._players.length; i++) {
+
+        let currentPlayer = team._players[i].age;
+
+        if (currentPlayer >= olderPlayer) {
+            olderPlayer = currentPlayer;
+        }
+    }
+    return olderPlayer;
+}
 
 // js
 let team = {
@@ -46,7 +78,7 @@ let team = {
             firstName: 'Johan',
             lastName: 'Himal',
             age: 29
-        }, 
+        },
         {
             firstName: 'Florine',
             lastName: 'Taigueur',
@@ -83,7 +115,16 @@ let team = {
 }
 
 addPlayer('Emma', 'Nifique', 22);
+addPlayer('Agathe', 'Eau', 25);
+addPlayer('Mickael', 'Fique', 33);
 
-addGame('Magne', 43, 32);
+addGame('MerlinSchool', 35, 29);
+addGame('Niort', 56, 37);
+addGame('Paris Sorcier Germain', 10, 9);
 
-console.log(team);
+
+console.log('Notre équipe a marqué ' + totalTeamPoints() + ' points cette année !');
+
+console.log('Les équipes adverses ont eu une moyenne de ' + averageOpponents() + ' points cette année !')
+
+console.log(findOlderPlayer());
