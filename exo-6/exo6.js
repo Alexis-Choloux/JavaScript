@@ -58,17 +58,17 @@ function averageOpponents() {
 
 function findOlderPlayer() {
 
-    let olderPlayer = 0;
+    let olderPlayer = team._players[0];
 
-    for (i = 0; i < team._players.length; i++) {
+    for (let i = 1; i < team._players.length; i++) {
 
-        let currentPlayer = team._players[i].age;
+        let currentPlayer = team._players[i];
 
-        if (currentPlayer >= olderPlayer) {
+        if (currentPlayer.age >= olderPlayer.age) {
             olderPlayer = currentPlayer;
         }
     }
-    return olderPlayer;
+    console.log('Le joueur le plus agé est ' + olderPlayer.firstName + ' ' + olderPlayer.lastName + ' et est agé de ' + olderPlayer.age + ' ans.');
 }
 
 // js
@@ -128,3 +128,6 @@ console.log('Notre équipe a marqué ' + totalTeamPoints() + ' points cette ann�
 console.log('Les équipes adverses ont eu une moyenne de ' + averageOpponents() + ' points cette année !')
 
 console.log(findOlderPlayer());
+
+team._players.sort((a, b) => (a.lastName < b.lastName) ? -1 : (a.lastName > b.lastName) ? 1 : 0);
+console.log(team._players);
