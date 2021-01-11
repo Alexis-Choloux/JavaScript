@@ -115,3 +115,47 @@ button.onclick = () => {
         }
     }
 }
+
+
+// add to array
+// ===============================
+function addToData () {
+
+    let articleInserted = false;
+
+    let type = document.getElementById('type').value;
+    let name = document.getElementById('name').value;
+    let description = document.getElementById('description').value;
+    let price = document.getElementById('price').value;
+    let quantity = document.getElementById('quantity').value;
+
+    let newObject = {
+        "name": name,
+        "description": description,
+        "price": price,
+        "quantity": quantity
+    }
+
+    outer_loop:
+    for (let i = 0; i < jsonDatas.length; i++) {
+        if (type == jsonDatas[i].type) {
+            jsonDatas[i].items.push(newObject);
+
+            articleInserted = true;
+
+            alert('Article ajouté dans la famille ' + jsonDatas[i].type);
+            break outer_loop;
+        }
+    }
+    if (!articleInserted) {
+        alert('La famille n\'existe pas !');
+    }
+}
+
+let form = document.getElementById('form');
+
+form.addEventListener('submit', e => {
+    e.preventDefault;
+    addToData();
+    console.log(jsonDatas);
+});
