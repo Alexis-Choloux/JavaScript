@@ -5,13 +5,45 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<script src="datas.js"></script>
-		<script src="exo7.js"></script>
 
     </head>
     <body>
 		<div class="container-fluid">
 			<h1>Exercice 7</h1>
 			
+			<form action="#" method="GET" id="f">
+
+				<div>
+					<label for="type">Type : </label>
+					<input type="text" id="type">
+				</div>
+	
+				<div>
+					<label for="name">Nom : </label>
+					<input type="text" id="name">
+				</div>
+	
+				<div>
+					<label for="description">Description : </label>
+					<input type="text" id="description">
+				</div>
+	
+				<div>
+					<label for="price">Prix : </label>
+					<input type="number" id="price">
+				</div>
+	
+				<div>
+					<label for="quantity">Quantité : </label>
+					<input type="number" id="quantity">
+				</div>
+	
+				<div>
+					<input type="submit" id="submit" value="Envoyer">
+				</div>
+	
+			</form>
+
 			<ul class="nav nav-tabs"  role="tablist">
 			  <li class="nav-item"><a class="nav-link active" id="table-tab-nav" data-toggle="tab"  role="tab"  href="#table-tab" aria-controls="table-tab" aria-selected="true">Table</a></li>
 			</ul>
@@ -24,16 +56,18 @@
 							<tr>
 								<th>Nom</th>
 								<th>Description</th>
-								<th>Type</th>
 								<th>Prix</th>
 								<th>Quantité</th>
+								<th>Contact</th>
+								<th>Type</th>
 							</tr>
 						</thead>
-						<tbody>
+						<tbody  id="tableau">
 						</tbody>		
 					</table>
 				</div>
 				
+				<script src="exo7.js"></script>
 
 			</div>			
 		</div>

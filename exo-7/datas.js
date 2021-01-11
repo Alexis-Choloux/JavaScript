@@ -6,19 +6,34 @@ var jsonDatas = [
 				"name": "Fiat Punto",
 				"description": "Je suis une voiture",
 				"price": 10000,
-				"quantity": 2
+				"quantity": 2,
+				"contact" : {
+					"lastName" 	: "Dubois",
+					"firstName"	: "Martin",
+					"address"	: "1 Grande Rue 74000 Annecy"
+				}
 			},
 			{
 				"name": "Porsche 911",
 				"description": "Je suis une belle voiture",
 				"price": 80000,
 				"quantity": 0,
+				"contact" : {
+					"lastName" 	: "Dubois",
+					"firstName"	: "Martin",
+					"address"	: "1 Grande Rue 74000 Annecy"
+				}
 			},
 			{
 				"name": "Peugeot 205",
 				"description": "Je suis une autre voiture",
 				"price": 2000,
-				"quantity": 2
+				"quantity": 2,
+				"contact" : {
+					"lastName" 	: "Dubois",
+					"firstName"	: "Martin",
+					"address"	: "1 Grande Rue 74000 Annecy"
+				}
 			},
 		]
 	},
@@ -29,14 +44,24 @@ var jsonDatas = [
 				"name": "Villa sur la plage",
 				"description": "Quelle belle vue",
 				"price": 870000,
-				"quantity": 1
+				"quantity": 1,
+				"contact" : {
+					"lastName" 	: "Dubois",
+					"firstName"	: "Martin",
+					"address"	: "1 Grande Rue 74000 Annecy"
+				}
 			},
 			{
 				"name": "Maison à la campagne",
 				"type": "house",
 				"description": "Vive le calme",
 				"price": 170000,
-				"quantity": 3
+				"quantity": 3,
+				"contact" : {
+					"lastName" 	: "Dubois",
+					"firstName"	: "Martin",
+					"address"	: "1 Grande Rue 74000 Annecy"
+				}
 			},
 		]
 	},
@@ -48,7 +73,12 @@ var jsonDatas = [
 				"type": "game",
 				"description": "",
 				"price": 30,
-				"quantity": 300
+				"quantity": 300,
+				"contact" : {
+					"lastName" 	: "Dubois",
+					"firstName"	: "Martin",
+					"address"	: "1 Grande Rue 74000 Annecy"
+				}
 			}
 		]
 	},
@@ -60,7 +90,12 @@ var jsonDatas = [
 				"type": "videoGame",
 				"description": "",
 				"price": 30,
-				"quantity": 200
+				"quantity": 200,
+				"contact" : {
+					"lastName" 	: "Dubois",
+					"firstName"	: "Martin",
+					"address"	: "1 Grande Rue 74000 Annecy"
+				}
 			}
 		]
 	},
@@ -72,14 +107,24 @@ var jsonDatas = [
 				"type": "show",
 				"description": "",
 				"price": 800,
-				"quantity": 10
+				"quantity": 10,
+				"contact" : {
+					"lastName" 	: "Dubois",
+					"firstName"	: "Martin",
+					"address"	: "1 Grande Rue 74000 Annecy"
+				}
 			},
 			{
 				"name": "Entrée au parc Astérix",
 				"type": "show",
 				"description": "",
 				"price": 30,
-				"quantity": 200
+				"quantity": 200,
+				"contact" : {
+					"lastName" 	: "Dubois",
+					"firstName"	: "Martin",
+					"address"	: "1 Grande Rue 74000 Annecy"
+				}
 			}
 		]
 	}

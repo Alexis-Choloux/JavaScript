@@ -155,7 +155,14 @@ function addToData () {
 let form = document.getElementById('form');
 
 form.addEventListener('submit', e => {
-    e.preventDefault;
+    e.preventDefault();
     addToData();
     console.log(jsonDatas);
 });
+
+
+for (let i = 0; i < jsonDatas.length; i++) {
+    for (let j = 0; j < jsonDatas[i].items.length; j++) {
+        console.log(jsonDatas[i].items[j].contact);
+    }
+}
